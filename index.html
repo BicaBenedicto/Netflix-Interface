@@ -11,43 +11,56 @@
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
     crossorigin="anonymous"
   >
+  <!-- JavaScript Bundle with Popper -->
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"
+  >
+  </script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.css" media="screen">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="style.css">
+
   <title>Netflix</title>
 </head>
-<body class="container-fluid">
-  <header class="d-flex justify-content-between">
-  <nav class="navbar navbar-expand-lg navbar-light ms-5">
-    <a class="nav-brand" href="#">NETFLIX</a>
+<body>
+  <header class="header">
+  <nav class="navbar navbar-expand-lg navbar-white">
+    <a class="nav-brand mx-5" href="#">
+      <img src="./imgs/netflix-logo.png" alt="netflix" width="100px">
+    </a>
     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
       <li class="nav-item">
-        <a class="nav-link">Início</a>
+        <a class="nav-link color-white">Início</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link">Séries</a>
+        <a class="nav-link color-white">Séries</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link">Filmes</a>
+        <a class="nav-link color-white">Filmes</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link">Bombando</a>
+        <a class="nav-link color-white">Bombando</a>
       </li> 
       <li class="nav-item">
-        <a class="nav-link">Minha lista</a>
+        <a class="nav-link color-white">Minha lista</a>
       </li>
     </ul>
     </nav>
-    <nav class="navbar navbar-expand-lg navbar-light me-5">
+    <nav class="navbar navbar-expand-lg navbar-white me-5">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link">Search</a>
+          <a class="nav-link color-white"><i class="bi-search"></i></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link">Infantil</a>
+          <a class="nav-link color-white">Infantil</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link">Sino</a>
+          <a class="nav-link color-white"><i class="bi-bell-fill"></i></a>
         </li>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <a class="nav-link dropdown-toggle color-white" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Menu
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -60,5 +73,50 @@
       </ul>
     </nav>
   </header>
+  <div id="destaque">
+    <div class="description-destaque">
+      <img src="https://occ-0-1311-1740.1.nflxso.net/dnm/api/v6/LmEnxtiAuzezXBjYXPuDgfZ4zZQ/AAAABTscELUS4pL1_fus933dTmUBVJkEQqZBLFspEFcXVIqBm3SPNasYJ7FdlB0Fr_mNmm44kRq5HI2BYSQO1g2gpc_ngr4I8x2a-fon.webp?r=7d6" alt='spartacus' />
+      <h3 class="w-100 color-white">Um trácio é condenado à morte na arena, mas ele derrota seus executores e renasce como o escravo gladiador Spartacus.</h2>
+    </div>
+    <div>
+      <button class="assistir px-5 py-2 rounded-3" type="button"><i class="bi-play-fill"></i> Assistir</button>
+      <button class="mais-informacoes px-5 py-2 rounded-3" type="button"><i class="bi-info-circle"></i> Mais informações</button>
+    </div>
+  </div>
+  <main>
+    <h1>Ação</h1>
+    <div
+      id="action"
+      class="gallery js-flickity"
+      data-flickity-options='{ "wrapAround": true }'
+    >
+    </div>
+    <h1>Aventura</h1>
+    <div
+      id="adventure"
+      class="gallery js-flickity"
+      data-flickity-options='{ "wrapAround": true }'
+    >
+    </div>
+    </div>
+    <h1>Comédia</h1>
+    <div
+      id="comedy"
+      class="gallery js-flickity"
+      data-flickity-options='{ "wrapAround": true }'
+    >
+    </div>
+    </div>
+    <h1>Romance</h1>
+    <div
+      id="romance"
+      class="gallery js-flickity"
+      data-flickity-options='{ "wrapAround": true }'
+    >
+    </div>
+    </div>
+  </main>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.pkgd.js"></script>
+  <script src="script.js" defer></script>
 </body>
 </html>

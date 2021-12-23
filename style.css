@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #1f1f1f;
+  height: 100vh;
+  position: relative;
+  width: 100vw;
+}
+
+main {
+  background: rgb(31,31,31);
+  background: linear-gradient(0deg, rgba(31,31,31,1) 70%, rgba(54,54,54,0) 75%);
+  color: white;
+  transform: translateY(150px);
+  padding: 30px;
+  padding-top: 500px;
+  position: relative;
+  z-index: 1;
+}
+
+.header {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+}
+
+#destaque {
+  align-items: flex-start;
+  background-image: url('./imgs/spartacus.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 700px;
+  padding: 70px;
+  position: absolute;
+  z-index: 0;
+  width: 100vw;
+}
+
+#destaque .description-destaque {
+  width: 35%;
+}
+
+.color-white {
+  color: white;
+}
+
+.assistir {
+  border: none;
+  background-color: white;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.mais-informacoes {
+  border: none;
+  background-color: rgba(124, 124, 124, 0.726);
+  color: white;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.card-list {
+  display: flex;
+  flex-direction: row;
+  overflow-x: scroll;
+}
+
+.seta {
+  background-color: rgba(58, 58, 58, 0.582);
+  width: 50px;
+}
+
+
+.gallery-cell {
+  width: 66%;
+  height: 200px;
+  margin-right: 10px;
+  counter-increment: gallery-cell;
+}
+
+.flickity-prev-next-button {
+  color: white;
+  border-radius: 0;
+  background-color: #1f1f1f48;
+  width: 50px !important;
+  height: 95%;
+  top: 105px;
+}
+
+
+.flickity-prev-next-button:hover {
+  background-color: #616161a4;
+}
