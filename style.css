@@ -17,7 +17,7 @@ main {
   color: white;
   transform: translateY(150px);
   padding: 30px;
-  padding-top: 500px;
+  padding-top: 80px;
   position: relative;
   z-index: 1;
 }
@@ -25,10 +25,57 @@ main {
 .header {
   align-items: center;
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   position: fixed;
   z-index: 10;
   width: 100%;
+}
+
+.logo {
+  width: 100%;
+}
+
+.mobile-menu {
+  align-items: center;
+  flex-wrap: nowrap;
+  width: 50%;
+}
+
+.mobile-menu .nav-brand {
+  width: 30%;
+}
+
+.mobile-menu .navbar-nav {
+  flex-direction: row;
+}
+
+.mobile-menu-nav {
+  flex-direction: row;
+}
+
+.navbar-nav .nav-item {
+  display: none;
+}
+
+.nav-item {
+  margin: 0 10px;
+}
+
+.nav-link:hover {
+  color: white;
+}
+
+.nav-link:active {
+  color: white;
+}
+
+.navbar-nav .nav-item.mobile {
+  display: block;
+}
+
+.navbar-nav .nav-item a {
+  font-size: 10px;
 }
 
 #destaque {
@@ -36,12 +83,12 @@ main {
   background-image: url('./imgs/spartacus.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center top;
+  background-position: right top;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 700px;
-  padding: 70px;
+  height: 200px;
+  padding-left: 2em;
   position: absolute;
   z-index: 0;
   width: 100vw;
@@ -51,14 +98,28 @@ main {
   width: 35%;
 }
 
+#destaque .description-destaque h3 {
+  display: none;
+}
+
+#destaque .description-destaque img {
+  margin-bottom: 20px;
+  width: 100%;
+}
+
 .color-white {
   color: white;
+}
+
+.card {
+  height: 100px;
+  width: 100px;
 }
 
 .assistir {
   border: none;
   background-color: white;
-  font-size: 30px;
+  font-size: 10px;
   font-weight: 600;
 }
 
@@ -66,7 +127,7 @@ main {
   border: none;
   background-color: rgba(124, 124, 124, 0.726);
   color: white;
-  font-size: 30px;
+  font-size: 10px;
   font-weight: 600;
 }
 
@@ -101,4 +162,20 @@ main {
 
 .flickity-prev-next-button:hover {
   background-color: #616161a4;
+}
+
+@media only screen and (min-width: 400px) {
+  
+}
+
+@media only screen and (min-width: 600px) {
+  
+}
+
+@media only screen and (min-width: 800px) {
+  
+}
+
+@media only screen and (min-width: 1000px) {
+  
 }

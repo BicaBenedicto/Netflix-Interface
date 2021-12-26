@@ -26,11 +26,23 @@
 </head>
 <body>
   <header class="header">
-  <nav class="navbar navbar-expand-lg navbar-white">
-    <a class="nav-brand mx-5" href="#">
-      <img src="./imgs/netflix-logo.png" alt="netflix" width="100px">
+  <nav class="navbar navbar-expand-lg mobile-menu">
+    <a class="nav-brand mx-2" href="#">
+      <img src="./imgs/netflix-logo.png" alt="netflix" class="logo">
     </a>
-    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+    <ul class="navbar-nav me-auto">
+      <li class="nav-item dropdown mobile">
+        <a class="nav-link dropdown-toggle color-white" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          Navegar
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <li><a class="dropdown-item" href="#">Início</a></li>
+          <li><a class="dropdown-item" href="#">Séries</a></li>
+          <li><a class="dropdown-item" href="#">Filmes</a></li>
+          <li><a class="dropdown-item" href="#">Bombando</a></li>
+          <li><a class="dropdown-item" href="#">Minha lista</a></li>
+        </ul>
+      </li>
       <li class="nav-item">
         <a class="nav-link color-white">Início</a>
       </li>
@@ -48,18 +60,18 @@
       </li>
     </ul>
     </nav>
-    <nav class="navbar navbar-expand-lg navbar-white me-5">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+    <nav class="navbar navbar-expand-lg me-5">
+      <ul class="navbar-nav mobile-menu-nav">
         <li class="nav-item">
           <a class="nav-link color-white"><i class="bi-search"></i></a>
         </li>
         <li class="nav-item">
           <a class="nav-link color-white">Infantil</a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item mobile">
           <a class="nav-link color-white"><i class="bi-bell-fill"></i></a>
         </li>
-        <li class="nav-item dropdown">
+        <li class="nav-item dropdown mobile">
           <a class="nav-link dropdown-toggle color-white" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Menu
           </a>
@@ -79,8 +91,8 @@
       <h3 class="w-100 color-white">Um trácio é condenado à morte na arena, mas ele derrota seus executores e renasce como o escravo gladiador Spartacus.</h2>
     </div>
     <div>
-      <button class="assistir px-5 py-2 rounded-3" type="button"><i class="bi-play-fill"></i> Assistir</button>
-      <button class="mais-informacoes px-5 py-2 rounded-3" type="button"><i class="bi-info-circle"></i> Mais informações</button>
+      <button class="assistir px-3 py-2 rounded-3" type="button"><i class="bi-play-fill"></i> Assistir</button>
+      <button class="mais-informacoes px-3 py-2 rounded-3" type="button"><i class="bi-info-circle"></i> Mais informações</button>
     </div>
   </div>
   <main>
