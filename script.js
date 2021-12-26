@@ -1,6 +1,6 @@
 const requestAPI = async (search, type='series', page=1) => {
   const movie = (search.includes(' ') ? search.replace(' ', '%20') : search);
-  const response = await fetch(`http://www.omdbapi.com/?apikey=312712c4&s=${movie}&type=${type}&page=${page}`)
+  const response = await fetch(`https://www.omdbapi.com/?apikey=312712c4&s=${movie}&type=${type}&page=${page}`)
   const { Search }= await response.json();
   console.log(Search);
   return Search;
