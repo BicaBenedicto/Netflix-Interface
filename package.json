@@ -1,7 +1,6 @@
 {
   "dependencies": {
-    "jquery": "^3.6.0",
-    "owl.carousel": "^2.3.4",
-    "zepto": "^1.2.0"
+    "bootstrap": "^5.1.3",
+    "flickity": "^2.3.0"
   }
 }

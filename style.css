@@ -111,9 +111,8 @@ main {
   color: white;
 }
 
-.card {
-  height: 100px;
-  width: 100px;
+.card-list .card-list-item {
+  margin: 0 10px;
 }
 
 .assistir {
@@ -134,7 +133,30 @@ main {
 .card-list {
   display: flex;
   flex-direction: row;
+  flex-wrap: nowrap;
   overflow-x: scroll;
+  overflow-y: hidden;
+}
+
+/* width */
+::-webkit-scrollbar {
+  height: 5px;
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #797979; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(49, 49, 49); 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(20, 20, 20); 
 }
 
 .seta {
@@ -164,18 +186,62 @@ main {
   background-color: #616161a4;
 }
 
-@media only screen and (min-width: 400px) {
-  
+@media only screen and (min-width: 650px) {
+  #destaque {
+    height: 400px;
+  }
+
+  main {
+    transform: translateY(330px);
+  }
+
+  .assistir , .mais-informacoes {
+    font-size: 15px;
+  }
 }
 
-@media only screen and (min-width: 600px) {
-  
-}
-
-@media only screen and (min-width: 800px) {
-  
+@media only screen and (min-width: 850px) {
+  .assistir , .mais-informacoes {
+    font-size: 20px;
+  }
 }
 
 @media only screen and (min-width: 1000px) {
-  
+  main {
+    transform: translateY(320px);
+    padding-top: 300px;
+  }
+
+  #destaque {
+    height: 600px;
+  }
+
+  #destaque .description-destaque h3 {
+    display: block;
+  }
+
+  .navbar-nav .nav-item {
+    display: block;
+  }
+
+  .navbar-nav .nav-item a {
+    font-size: 15px;
+  }
+
+  .nav-link:hover {
+    cursor: pointer;
+    color: rgb(170, 170, 170);
+  }
+
+  .nav-item.mobile.desktop {
+    display: none;
+  }
+
+  .mobile-menu .nav-brand {
+    width: 10%;
+  }
+
+  .card-list .card-list-item {
+    margin: 0 20px;
+  }
 }
